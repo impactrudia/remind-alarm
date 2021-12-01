@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RemindAlarm</string>
+    <string name="reminder">리마인더</string>
+    <string name="add_reminder">리마인더 추가</string>
+    <string name="reminder_setting">리마인더 설정</string>
+    <string name="reminder_name">리마인더 이름</string>
+    <string name="time_setting">시간 설정</string>
+    <string name="ringtone">벨소리</string>
+    <string name="save">Save</string>
+    <string name="dismiss">Dismiss</string>
+</resources>
