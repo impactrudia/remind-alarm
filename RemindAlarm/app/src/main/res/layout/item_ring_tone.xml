@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="item"
+            type="com.impactrudia.remindalarm.presentation.model.Alarm" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/second_background"
+        android:layout_width="match_parent"
+        android:layout_height="74dp">
+
+        <ImageView
+            android:id="@+id/imgAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_baseline_music_note_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toTopOf="@id/textMemo"
+            app:layout_constraintStart_toEndOf="@id/imgAlarm"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:textStyle="bold"
+            android:text="@string/ringtone_en" />
+
+        <TextView
+            android:id="@+id/textMemo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_blue_point"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgAlarm"
+            app:layout_constraintTop_toBottomOf="@+id/textTime"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Homecoming" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:tint="@color/arrow_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_chevron_right_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
