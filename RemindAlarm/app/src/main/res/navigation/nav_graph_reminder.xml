@@ -2,12 +2,20 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@+id/fragment_user_own_project">
+    app:startDestination="@+id/fragment_reminder_alarm_setting">
 
     <fragment
-        android:id="@+id/fragment_user_own_project"
-        android:name="com.impactrudia.remindalarm.presentation.ui.ReminderMainFragment"
+        android:id="@+id/fragment_reminder_alarm_main"
+        android:name="com.impactrudia.remindalarm.presentation.ui.main.ReminderMainFragment"
         tools:layout="@layout/fragment_reminder_main">
+        <action
+            android:id="@+id/action_fragment_reminder_alarm_main_to_fragment_reminder_alarm_setting"
+            app:destination="@id/fragment_reminder_alarm_setting" />
     </fragment>
+
+    <fragment
+        android:id="@+id/fragment_reminder_alarm_setting"
+        android:name="com.impactrudia.remindalarm.presentation.ui.setting.ReminderSettingFragment"
+        tools:layout="@layout/fragment_reminder_setting" />
 
 </navigation>
