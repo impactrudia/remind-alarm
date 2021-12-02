@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/fragment_reminder_notice">
+
+    <fragment
+        android:id="@+id/fragment_reminder_notice"
+        android:name="com.impactrudia.remindalarm.presentation.ui.notice.ReminderNoticeFragment"
+        tools:layout="@layout/fragment_reminder_notice" />
+
+</navigation>
