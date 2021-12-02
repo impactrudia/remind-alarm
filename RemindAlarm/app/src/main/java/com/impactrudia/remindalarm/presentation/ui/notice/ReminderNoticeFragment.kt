@@ -18,8 +18,6 @@ class ReminderNoticeFragment : Fragment() {
         binding = FragmentReminderNoticeBinding.inflate(inflater, container, false)
 
         binding.apply {
-//            textMemo.text = "약 먹기"
-//            textTime.text = "09:00"
         }
         return binding.root
     }
