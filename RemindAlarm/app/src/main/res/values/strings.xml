@@ -7,7 +7,7 @@
     <string name="time_setting">시간 설정</string>
     <string name="ringtone">벨소리</string>
     <string name="save">Save</string>
-    <string name="dismiss">Dismiss</string>
+    <string name="dismiss_en">Dismiss</string>
     <string name="hint_input_reminder_name">Please enter a name</string>
     <string name="ringtone_en">Ringtone</string>
 </resources>
