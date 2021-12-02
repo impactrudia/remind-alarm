@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/fragment_user_own_project"
-        android:name="com.impactrudia.remindalarm.presentation.ui.ReminderMainFragment"
+        android:name="com.impactrudia.remindalarm.presentation.ui.main.ReminderMainFragment"
         tools:layout="@layout/fragment_reminder_main">
     </fragment>
 

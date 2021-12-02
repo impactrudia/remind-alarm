@@ -1,4 +1,4 @@
-package com.impactrudia.remindalarm.presentation.ui
+package com.impactrudia.remindalarm.presentation.ui.main
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -1,4 +1,4 @@
-package com.impactrudia.remindalarm.presentation.ui
+package com.impactrudia.remindalarm.presentation.ui.main
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
