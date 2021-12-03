@@ -8,18 +8,19 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import com.impactrudia.remindalarm.R
-import com.impactrudia.remindalarm.databinding.FragmentReminderMainBinding
+import com.impactrudia.remindalarm.databinding.FragmentRingtoneSelectionBinding
 import com.impactrudia.remindalarm.presentation.ui.base.RecyclerViewAdapter
-import com.impactrudia.remindalarm.presentation.ui.domain.AlarmModel
+import com.impactrudia.remindalarm.presentation.ui.domain.RingtoneModel
 import com.impactrudia.remindalarm.presentation.ui.domain.enum.AdapterType
 
-class ReminderMainFragment : Fragment() {
+class RingtoneSelectionFragment : Fragment() {
 
-    private lateinit var binding: FragmentReminderMainBinding
-    private val alarmAdapter by lazy {
-        RecyclerViewAdapter(AdapterType.ALARM) {
-            if (it is AlarmModel) {
-                Toast.makeText(requireActivity(), "title::${it?.memo}", Toast.LENGTH_SHORT).show()
+    private lateinit var binding: FragmentRingtoneSelectionBinding
+
+    private val ringtoneAdapter by lazy {
+        RecyclerViewAdapter(AdapterType.RINGTONE) {
+            if (it is RingtoneModel) {
+                Toast.makeText(requireActivity(), "title::${it?.title}", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -28,8 +29,8 @@ class ReminderMainFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentReminderMainBinding.inflate(inflater, container, false)
-        requireActivity().title = getString(R.string.reminder)
+        binding = FragmentRingtoneSelectionBinding.inflate(inflater, container, false)
+        requireActivity().title = getString(R.string.ringtone_selection)
 
         binding.apply {
             with(recyclerView) {
@@ -40,7 +41,7 @@ class ReminderMainFragment : Fragment() {
                         DividerItemDecoration.VERTICAL
                     )
                 )
-                adapter = alarmAdapter
+                adapter = ringtoneAdapter
             }
             subscribeUi()
         }
@@ -49,7 +50,7 @@ class ReminderMainFragment : Fragment() {
     }
 
     private fun subscribeUi() {
-        val mutableList = mutableListOf<AlarmModel>()
-        alarmAdapter.addAll(mutableList.toList())
+        val ringtoneModels = mutableListOf<RingtoneModel>()
+        ringtoneAdapter.addAll(ringtoneModels.toList())
     }
 }

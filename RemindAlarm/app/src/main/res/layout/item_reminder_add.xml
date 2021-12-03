@@ -11,13 +11,14 @@
 
         <variable
             name="item"
-            type="com.impactrudia.remindalarm.presentation.model.Alarm" />
+            type="com.impactrudia.remindalarm.presentation.ui.domain.AlarmModel" />
 
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp">
+        android:layout_height="56dp"
+        android:onClick="@{clickListener}">
 
         <ImageView
             android:id="@+id/imgAlarm"

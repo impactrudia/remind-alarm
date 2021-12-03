@@ -10,4 +10,5 @@
     <string name="dismiss_en">Dismiss</string>
     <string name="hint_input_reminder_name">Please enter a name</string>
     <string name="ringtone_en">Ringtone</string>
+    <string name="ringtone_selection">벨소리 선택</string>
 </resources>
