@@ -1,8 +1,8 @@
 package com.impactrudia.remindalarm.presentation.ui.base
 
 import com.impactrudia.remindalarm.databinding.ItemRingToneBinding
-import com.impactrudia.remindalarm.presentation.ui.domain.MyItem
-import com.impactrudia.remindalarm.presentation.ui.domain.RingtoneModel
+import com.impactrudia.remindalarm.presentation.model.MyItem
+import com.impactrudia.remindalarm.presentation.model.RingtoneModel
 
 class ViewHolderRingtone(
     private val binding: ItemRingToneBinding,

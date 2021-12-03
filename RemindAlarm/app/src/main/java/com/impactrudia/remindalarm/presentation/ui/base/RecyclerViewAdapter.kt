@@ -5,8 +5,8 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.impactrudia.remindalarm.R
-import com.impactrudia.remindalarm.presentation.ui.domain.MyItem
-import com.impactrudia.remindalarm.presentation.ui.domain.enum.AdapterType
+import com.impactrudia.remindalarm.presentation.model.MyItem
+import com.impactrudia.remindalarm.presentation.model.enums.AdapterType
 
 
 class RecyclerViewAdapter(

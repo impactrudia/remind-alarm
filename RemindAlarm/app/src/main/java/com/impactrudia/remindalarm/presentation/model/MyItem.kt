@@ -1,4 +1,4 @@
-package com.impactrudia.remindalarm.presentation.ui.domain
+package com.impactrudia.remindalarm.presentation.model
 
 import java.io.Serializable
 

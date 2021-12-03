@@ -11,7 +11,7 @@
 
         <variable
             name="item"
-            type="com.impactrudia.remindalarm.presentation.ui.domain.AlarmModel" />
+            type="com.impactrudia.remindalarm.presentation.model.AlarmModel" />
 
     </data>
 

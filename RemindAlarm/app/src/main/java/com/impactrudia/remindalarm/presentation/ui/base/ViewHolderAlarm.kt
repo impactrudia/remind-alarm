@@ -1,8 +1,8 @@
 package com.impactrudia.remindalarm.presentation.ui.base
 
 import com.impactrudia.remindalarm.databinding.ItemReminderAddBinding
-import com.impactrudia.remindalarm.presentation.ui.domain.AlarmModel
-import com.impactrudia.remindalarm.presentation.ui.domain.MyItem
+import com.impactrudia.remindalarm.presentation.model.AlarmModel
+import com.impactrudia.remindalarm.presentation.model.MyItem
 
 class ViewHolderAlarm(
     private val binding: ItemReminderAddBinding,

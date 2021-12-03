@@ -5,13 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import com.impactrudia.remindalarm.R
 import com.impactrudia.remindalarm.databinding.FragmentReminderMainBinding
 import com.impactrudia.remindalarm.presentation.ui.base.RecyclerViewAdapter
-import com.impactrudia.remindalarm.presentation.ui.domain.AlarmModel
-import com.impactrudia.remindalarm.presentation.ui.domain.enum.AdapterType
+import com.impactrudia.remindalarm.presentation.model.AlarmModel
+import com.impactrudia.remindalarm.presentation.model.enums.AdapterType
 
 class ReminderMainFragment : Fragment() {
 
@@ -19,7 +18,6 @@ class ReminderMainFragment : Fragment() {
     private val alarmAdapter by lazy {
         RecyclerViewAdapter(AdapterType.ALARM) {
             if (it is AlarmModel) {
-                Toast.makeText(requireActivity(), "title::${it?.memo}", Toast.LENGTH_SHORT).show()
             }
         }
     }
