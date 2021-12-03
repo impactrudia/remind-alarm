@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@+id/fragment_reminder_alarm_setting">
+    app:startDestination="@+id/fragment_ringtone_selection">
 
     <fragment
         android:id="@+id/fragment_reminder_alarm_main"
@@ -16,6 +16,15 @@
     <fragment
         android:id="@+id/fragment_reminder_alarm_setting"
         android:name="com.impactrudia.remindalarm.presentation.ui.setting.ReminderSettingFragment"
-        tools:layout="@layout/fragment_reminder_setting" />
+        tools:layout="@layout/fragment_reminder_setting">
+        <action
+            android:id="@+id/action_fragment_reminder_alarm_setting_to_fragment_ringtone_selection"
+            app:destination="@id/fragment_ringtone_selection" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_ringtone_selection"
+        android:name="com.impactrudia.remindalarm.presentation.ui.main.RingtoneSelectionFragment"
+        tools:layout="@layout/fragment_ringtone_selection" />
 
 </navigation>
