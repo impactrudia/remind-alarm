@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@+id/fragment_ringtone_selection">
+    app:startDestination="@+id/fragment_reminder_alarm_main">
 
     <fragment
         android:id="@+id/fragment_reminder_alarm_main"

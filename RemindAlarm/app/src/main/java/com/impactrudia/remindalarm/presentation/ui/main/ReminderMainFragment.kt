@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import com.impactrudia.remindalarm.R
 import com.impactrudia.remindalarm.databinding.FragmentReminderMainBinding
@@ -30,6 +31,11 @@ class ReminderMainFragment : Fragment() {
         requireActivity().title = getString(R.string.reminder)
 
         binding.apply {
+            buttonAddReminder.setOnClickListener {
+                val directions =
+                    ReminderMainFragmentDirections.actionFragmentReminderAlarmMainToFragmentReminderAlarmSetting()
+                findNavController().navigate(directions)
+            }
             with(recyclerView) {
                 setHasFixedSize(true)
                 addItemDecoration(
